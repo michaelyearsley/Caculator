@@ -1,0 +1,17 @@
+C:\Users\Micha\source\repos\Caculator\Caculator\bin\Debug\netcoreapp3.1\Caculator.exe
+C:\Users\Micha\source\repos\Caculator\Caculator\bin\Debug\netcoreapp3.1\Caculator.deps.json
+C:\Users\Micha\source\repos\Caculator\Caculator\bin\Debug\netcoreapp3.1\Caculator.runtimeconfig.json
+C:\Users\Micha\source\repos\Caculator\Caculator\bin\Debug\netcoreapp3.1\Caculator.runtimeconfig.dev.json
+C:\Users\Micha\source\repos\Caculator\Caculator\bin\Debug\netcoreapp3.1\Caculator.dll
+C:\Users\Micha\source\repos\Caculator\Caculator\bin\Debug\netcoreapp3.1\Caculator.pdb
+C:\Users\Micha\source\repos\Caculator\Caculator\obj\Debug\netcoreapp3.1\Caculator.csprojAssemblyReference.cache
+C:\Users\Micha\source\repos\Caculator\Caculator\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\Micha\source\repos\Caculator\Caculator\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\Micha\source\repos\Caculator\Caculator\obj\Debug\netcoreapp3.1\Caculator_MarkupCompile.cache
+C:\Users\Micha\source\repos\Caculator\Caculator\obj\Debug\netcoreapp3.1\Caculator_MarkupCompile.lref
+C:\Users\Micha\source\repos\Caculator\Caculator\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\Micha\source\repos\Caculator\Caculator\obj\Debug\netcoreapp3.1\Caculator.g.resources
+C:\Users\Micha\source\repos\Caculator\Caculator\obj\Debug\netcoreapp3.1\Caculator.AssemblyInfoInputs.cache
+C:\Users\Micha\source\repos\Caculator\Caculator\obj\Debug\netcoreapp3.1\Caculator.AssemblyInfo.cs
+C:\Users\Micha\source\repos\Caculator\Caculator\obj\Debug\netcoreapp3.1\Caculator.dll
+C:\Users\Micha\source\repos\Caculator\Caculator\obj\Debug\netcoreapp3.1\Caculator.pdb
