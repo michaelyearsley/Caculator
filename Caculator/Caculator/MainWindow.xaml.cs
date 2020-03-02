@@ -22,178 +22,110 @@ namespace Caculator
     {
         float number1 = 0;
         float number2 = 0;
-        String operation = "";
-        private void btn1_Click(object sender, RoutedEventArgs e)
+        String operation = string.Empty;
+        Button b;
+        String Num = string.Empty;
+        private void btn_Click(object sender, RoutedEventArgs e)
         {
+            b = (Button)sender;
             if (operation == "")
             {
-                number1 = (number1 * 10) + 1;
+                number1 = (number1 * 10) + Convert.ToInt32(b.Content);
                 Results.Text = number1.ToString();
             }
             else
             {
-                number2 = (number2 * 10) + 1;
+                number2 = (number2 * 10) + Convert.ToInt32(b.Content);
                 Results.Text = number2.ToString();
             }
         }
-        private void btn2_Click(object sender, RoutedEventArgs e)
+        private void Operation_Click(object sender, RoutedEventArgs e)
         {
-            if (operation == "")
-            {
-                number1 = (number1 * 10) + 2;
-                Results.Text = number1.ToString();
-            }
-            else
-            {
-                number2 = (number2 * 10) + 2;
-                Results.Text = number2.ToString();
-            }
-        }
-        private void btn3_Click(object sender, RoutedEventArgs e)
-        {
-            if (operation == "")
-            {
-                number1 = (number1 * 10) + 3;
-                Results.Text = number1.ToString();
-            }
-            else
-            {
-                number2 = (number2 * 10) + 3;
-                Results.Text = number2.ToString();
-            }
-        }
-        private void btn4_Click(object sender, RoutedEventArgs e)
-        {
-            if (operation == "")
-            {
-                number1 = (number1 * 10) + 4;
-                Results.Text = number1.ToString();
-            }
-            else
-            {
-                number2 = (number2 * 10) + 4;
-                Results.Text = number2.ToString();
-            }
-        }
-        private void btn5_Click(object sender, RoutedEventArgs e)
-        {
-            if (operation == "")
-            {
-                number1 = (number1 * 10) + 5;
-                Results.Text = number1.ToString();
-            }
-            else
-            {
-                number2 = (number2 * 10) + 5;
-                Results.Text = number2.ToString();
-            }
-        }
-        private void btn6_Click(object sender, RoutedEventArgs e)
-        {
-            if (operation == "")
-            {
-                number1 = (number1 * 10) + 6;
-                Results.Text = number1.ToString();
-            }
-            else
-            {
-                number2 = (number2 * 10) + 6;
-                Results.Text = number2.ToString();
-            }
-        }
-        private void btn7_Click(object sender, RoutedEventArgs e)
-        {
-            if (operation == "")
-            {
-                number1 = (number1 * 10) +7;
-                Results.Text = number1.ToString();
-            }
-            else
-            {
-                number2 = (number2 * 10) + 7;
-                Results.Text = number2.ToString();
-            }
-        }
-        private void btn8_Click(object sender, RoutedEventArgs e)
-        {
-            if (operation == "")
-            {
-                number1 = (number1 * 10) + 8;
-                Results.Text = number1.ToString();
-            }
-            else
-            {
-                number2 = (number2 * 10) + 8;
-                Results.Text = number2.ToString();
-            }
-        }
-        private void btn9_Click(object sender, RoutedEventArgs e)
-        {
-            if (operation == "")
-            {
-                number1 = (number1 * 10) + 9;
-                Results.Text = number1.ToString();
-            }
-            else
-            {
-                number2 = (number2 * 10) + 9;
-                Results.Text = number2.ToString();
-            }
-        }
-        private void btn0_Click(object sender, RoutedEventArgs e)
-        {
-            if (operation == "")
-            {
-                number1 = (number1 * 10);
-                Results.Text = number1.ToString();
-            }
-            else
-            {
-                number2 = (number2 * 10);
-                Results.Text = number2.ToString();
-            }
-        }
-
-        private void Divide_Click(object sender, RoutedEventArgs e)
-        {
-            operation = "/";
+            b = (Button)sender;
+            operation = Convert.ToString(b.Content);
             Results.Text = "0";
         }
-
-        private void Mutiply_Click(object sender, RoutedEventArgs e)
-        {
-            operation = "*";
-            Results.Text = "0";
-        }
-
-        private void Sub_Click(object sender, RoutedEventArgs e)
-        {
-            operation = "-";
-            Results.Text = "0";
-        }
-
-        private void Add_Click(object sender, RoutedEventArgs e)
-        {
-            operation = "+";
-            Results.Text = "0";
-        }
-
         private void Equal_Click(object sender, RoutedEventArgs e)
         {
             switch(operation)
             {
                 case "+":
-                    Results.Text = (number1 + number2).ToString();
+                    number1 = (number1 + number2);
+                    number2 = 0;
+                    Results.Text = number1.ToString();
                     break;
                 case "-":
-                    Results.Text = (number1 - number2).ToString();
+                    number1 = (number1 - number2);
+                    number2 = 0;
+                    Results.Text = number1.ToString();
                     break;
                 case "*":
-                    Results.Text = (number1 * number2).ToString();
+                    number1 = (number1 * number2);
+                    number2 = 0;
+                    Results.Text = number1.ToString();
                     break;
                 case "/":
-                    Results.Text = (number1 / number2).ToString();
+                    number1 = (number1 / number2);
+                    number2 = 0;
+                    Results.Text = number1.ToString();
                     break;
+            }
+        }
+
+        private void CE_Click(object sender, RoutedEventArgs e)
+        {
+            if (operation == "=")
+            {
+                number2 = 0;
+                Results.Text = "0";
+            }
+            else if (operation == "")
+            {
+                number1 = 0;
+                Results.Text = "0";
+            }
+            else
+            {
+                number2 = 0;
+                Results.Text = "0";
+            }
+        }
+        private void C_Click(object sender, RoutedEventArgs e)
+        {
+            number1 = 0;
+            number2 = 0;
+            operation = "";
+            Results.Text = "0";
+        }
+
+        private void BackSpace_Click(object sender, RoutedEventArgs e)
+        {
+            if (operation == "")
+            {
+                Num = Convert.ToString(number1);
+                number1 = int.Parse(Num.Remove(Num.Length - 1, 1));
+                Results.Text = number1.ToString();
+            }
+            else
+            {
+                Num = Convert.ToString(number2);
+                number2 = int.Parse(Num.Remove(Num.Length - 1, 1));
+                Results.Text = number2.ToString(); ;
+            }
+
+        }
+
+        private void PosNeg_Click(object sender, RoutedEventArgs e)
+        {
+            if (operation == "")
+            {
+                number1 *= -1;
+                Results.Text = number1.ToString();
+            }
+            else
+            {
+                number2 *= -1;
+                Results.Text = number2.ToString();
             }
         }
     }
