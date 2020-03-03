@@ -4,8 +4,8 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Caculator"
-        mc:Ignorable="d"
-        Title="Caculator" Height="430 " Width="350">
+        mc:Ignorable="d" FontSize="22"
+        Title="Caculator" Height="430 " Width="350" FontFamily="Baskerville Old Face">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -34,7 +34,8 @@
         <Button x:Name="btn2" Grid.Row="4" Grid.Column="1" Click="btn_Click">2</Button>
         <Button x:Name="btn3" Grid.Row="4" Grid.Column="2" Click="btn_Click">3</Button>
         <Button x:Name="btn0" Grid.Row="5" Grid.Column="1" Click="btn_Click">0</Button>
-
+        <Button x:Name="btndec" Grid.Row="5" Grid.Column="2" Click="btn_Click">.</Button>
+        
         <!--Math Operator Button-->
         <Button x:Name="Divide" Grid.Row="1" Grid.Column="4" Click="Operation_Click">/</Button>
         <Button x:Name="Mutiply" Grid.Row="2" Grid.Column="4" Click="Operation_Click">*</Button>
